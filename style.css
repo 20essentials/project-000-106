@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  min-height: 100dvh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 2000px;
+}
+
+.am-header {
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  width: 100%;
+  height: 6rem;
+  background-image: linear-gradient(to bottom right,
+      #83f5e5,
+      #e761bd);
+
+  input {
+    width: 12rem;
+    padding: .4rem;
+    padding-left: .5rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 999px;
+
+    &:focus {
+      caret-color: mediumpurple;
+    }
+  }
+}
+
+main {
+  padding-block: 1rem;
+
+  p {
+    max-width: 90%;
+    margin-inline: auto;
+    padding: 1rem;
+  }
+}
